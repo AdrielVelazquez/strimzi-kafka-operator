@@ -43,7 +43,7 @@ public class KafkaClusterSpec implements HasConfigurableMetrics, HasConfigurable
 
     public static final String FORBIDDEN_PREFIXES = "listeners, advertised., broker., listener., host.name, port, "
             + "inter.broker.listener.name, sasl., ssl., security., password., log.dir, "
-            + "zookeeper.connect, zookeeper.set.acl, zookeeper.ssl, zookeeper.clientCnxnSocket, authorizer., super.user, "
+            + "zookeeper.set.acl, zookeeper.ssl, zookeeper.clientCnxnSocket, authorizer., super.user, "
             + "cruise.control.metrics.topic, cruise.control.metrics.reporter.bootstrap.servers,"
             + "node.id, process.roles, controller., metadata.log.dir"; // KRaft options
 

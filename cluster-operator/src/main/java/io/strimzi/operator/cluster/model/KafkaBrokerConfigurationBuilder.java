@@ -178,15 +178,15 @@ public class KafkaBrokerConfigurationBuilder {
      */
     public KafkaBrokerConfigurationBuilder withZookeeper(String clusterName)  {
         printSectionHeader("Zookeeper");
-        writer.println(String.format("zookeeper.connect=%s:%d", KafkaResources.zookeeperServiceName(clusterName), ZookeeperCluster.CLIENT_TLS_PORT));
-        writer.println("zookeeper.clientCnxnSocket=org.apache.zookeeper.ClientCnxnSocketNetty");
-        writer.println("zookeeper.ssl.client.enable=true");
-        writer.println("zookeeper.ssl.keystore.location=/tmp/kafka/cluster.keystore.p12");
-        writer.println("zookeeper.ssl.keystore.password=" + PLACEHOLDER_CERT_STORE_PASSWORD);
-        writer.println("zookeeper.ssl.keystore.type=PKCS12");
-        writer.println("zookeeper.ssl.truststore.location=/tmp/kafka/cluster.truststore.p12");
-        writer.println("zookeeper.ssl.truststore.password=" + PLACEHOLDER_CERT_STORE_PASSWORD);
-        writer.println("zookeeper.ssl.truststore.type=PKCS12");
+        // writer.println(String.format("zookeeper.connect=%s:%d", KafkaResources.zookeeperServiceName(clusterName), ZookeeperCluster.CLIENT_TLS_PORT));
+        // writer.println("zookeeper.clientCnxnSocket=org.apache.zookeeper.ClientCnxnSocketNetty");
+        // writer.println("zookeeper.ssl.client.enable=true");
+        // writer.println("zookeeper.ssl.keystore.location=/tmp/kafka/cluster.keystore.p12");
+        // writer.println("zookeeper.ssl.keystore.password=" + PLACEHOLDER_CERT_STORE_PASSWORD);
+        // writer.println("zookeeper.ssl.keystore.type=PKCS12");
+        // writer.println("zookeeper.ssl.truststore.location=/tmp/kafka/cluster.truststore.p12");
+        // writer.println("zookeeper.ssl.truststore.password=" + PLACEHOLDER_CERT_STORE_PASSWORD);
+        // writer.println("zookeeper.ssl.truststore.type=PKCS12");
         writer.println();
 
         return this;
