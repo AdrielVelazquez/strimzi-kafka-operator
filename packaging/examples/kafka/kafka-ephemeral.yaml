@@ -1,7 +1,7 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
-  name: my-cluster
+  name: my-cluster-custom-zk
 spec:
   kafka:
     version: 3.6.1
@@ -22,6 +22,7 @@ spec:
       default.replication.factor: 3
       min.insync.replicas: 2
       inter.broker.protocol.version: "3.6"
+      zookeeper.connect: "zoo1:2181"
     storage:
       type: ephemeral
   zookeeper:
